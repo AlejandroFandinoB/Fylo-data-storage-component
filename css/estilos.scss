@@ -9,63 +9,66 @@ $Dark-Blue: hsl(228, 56%, 26%);
 $Very-Dark-Blue: hsl(229, 57%, 11%);
 
 // Estilos generales
-*{
+* {
     margin: 0;
     padding: 0;
-    // box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 // Moviles
 
-body{
+body {
     background: url('../images/bg-mobile.png');
     font-size: 14px;
     font-family: 'Raleway', sans-serif;
     background-repeat: round;
+    height: 100vh;
 }
 
-.section{
+.section {
     height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
-    
-    .caja__uno{
+
+
+    .caja__uno {
         background-color: $Dark-Blue;
         border-radius: 10px 100px 10px 10px;
         width: 90%;
         height: 200px;
-        
-        .logo{
+
+        .logo {
             margin: 20px;
         }
 
-        .iconos{
+        .iconos {
             display: flex;
             justify-content: space-around;
             padding-top: 20px;
             width: 70%;
-            .icon{
+
+            .icon {
                 width: 50px;
                 background-color: $Very-Dark-Blue;
                 text-align: center;
                 padding-top: 10px;
                 padding-bottom: 10px;
-                border-radius:10px;
-                img{
+                border-radius: 10px;
+
+                img {
                     height: 25px;
                     width: 30px;
                     padding: 5px;
-                    
+
                 }
             }
         }
     }
 
-    .caja__dos{
+    .caja__dos {
         background-color: $Dark-Blue;
         display: flex;
         flex-direction: column;
@@ -76,26 +79,30 @@ body{
         border-radius: 10px;
         margin-top: 20px;
 
-        .text{
+        .text {
             color: #ffffff;
-            span{
+
+            span {
                 color: #ffffff;
                 font-weight: bolder;
-                
+
             }
         }
-        .barra{
+
+        .barra {
             margin-top: 20px;
             background-color: $Very-Dark-Blue;
             width: 90%;
             border-radius: 20px;
-            .barra__progreso{
+
+            .barra__progreso {
                 border-radius: 20px;
                 width: 80%;
-                background-image: linear-gradient(to right, $gradient1,$gradiente2);
+                background-image: linear-gradient(to right, $gradient1, $gradiente2);
                 display: flex;
                 justify-content: flex-end;
-                .marcador{
+
+                .marcador {
                     height: 10px;
                     background-color: #ffffff;
                     width: 4%;
@@ -103,12 +110,14 @@ body{
                 }
             }
         }
-        .text__final{
+
+        .text__final {
             margin-top: 20px;
             display: flex;
             justify-content: space-between;
             width: 90%;
-            p{
+
+            p {
                 color: #ffffff;
                 font-size: 16px;
             }
@@ -116,38 +125,68 @@ body{
     }
 }
 
+footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 30px;
+    background-color: $Dark-Blue;
+
+    .attribution {
+        font-size: 11px;
+        text-align: center;
+        color: #ffffff;
+
+        a {
+            color: #ffffff;
+            font-weight: 700;
+            text-decoration: none;
+        }
+    }
+}
+
+
 //  750px to 1440px
-@media only screen and (min-width:750px){
-    body{
+@media only screen and (min-width:750px) {
+    body {
         background-image: url("../images/bg-desktop.png");
         background-position-y: bottom;
         background-color: $Very-Dark-Blue;
         background-repeat: repeat-x;
+
     }
-    .section{
+
+    .section {
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        
-        .caja__uno{
+
+        .caja__uno {
             width: 25%;
             margin-right: 20px;
             margin-bottom: 150px;
+
         }
-        .caja__dos{
+
+        .caja__dos {
             width: 40%;
             height: 150px;
             margin-bottom: 150px;
-            .text{
+
+            .text {
                 align-self: flex-start;
                 margin-left: 25px;
             }
-            .barra{
+
+            .barra {
                 height: 20px;
-                .barra__progreso{
+
+                .barra__progreso {
                     height: 20px;
-                    .marcador{
+
+                    .marcador {
                         height: 20px;
                         width: 20px;
                     }
@@ -155,19 +194,29 @@ body{
             }
         }
     }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 30px;
+        background-color: $Dark-Blue;
+
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+            color: #ffffff;
+            p{
+                display: inline-block;
+                a{
+                    color: #ffffff;
+                    font-weight: 700;
+                    text-decoration: none;
+                }
+            }
+            
+        }
+    }
 }
-
-
-
-
-
-
-// .attribution {
-//     font-size: 11px;
-//     text-align: center;
-
-//     a{
-//         color: hsl(228, 45%, 44%);
-//     }
-// }
-
