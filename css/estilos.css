@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url("../images/bg-mobile.png");
+  font-size: 14px;
+  font-family: 'Raleway', sans-serif;
+  background-repeat: round;
+}
+
+.section {
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section .caja__uno {
+  background-color: #1d2c67;
+  border-radius: 10px 100px 10px 10px;
+  width: 90%;
+  height: 200px;
+}
+
+.section .caja__uno .logo {
+  margin: 20px;
+}
+
+.section .caja__uno .iconos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  padding-top: 20px;
+  width: 70%;
+}
+
+.section .caja__uno .iconos .icon {
+  width: 50px;
+  background-color: #0c122c;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+}
+
+.section .caja__uno .iconos .icon img {
+  height: 25px;
+  width: 30px;
+  padding: 5px;
+}
+
+.section .caja__dos {
+  background-color: #1d2c67;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 90%;
+  height: 200px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.section .caja__dos .text {
+  color: #ffffff;
+}
+
+.section .caja__dos .text span {
+  color: #ffffff;
+  font-weight: bolder;
+}
+
+.section .caja__dos .barra {
+  margin-top: 20px;
+  background-color: #0c122c;
+  width: 90%;
+  border-radius: 20px;
+}
+
+.section .caja__dos .barra .barra__progreso {
+  border-radius: 20px;
+  width: 80%;
+  background-image: -webkit-gradient(linear, left top, right top, from(#ffa399), to(#ff4d97));
+  background-image: linear-gradient(to right, #ffa399, #ff4d97);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.section .caja__dos .barra .barra__progreso .marcador {
+  height: 10px;
+  background-color: #ffffff;
+  width: 4%;
+  border-radius: 10px;
+}
+
+.section .caja__dos .text__final {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 90%;
+}
+
+.section .caja__dos .text__final p {
+  color: #ffffff;
+  font-size: 16px;
+}
+
+@media only screen and (min-width: 750px) {
+  body {
+    background-image: url("../images/bg-desktop.png");
+    background-position-y: bottom;
+    background-color: #0c122c;
+    background-repeat: repeat-x;
+  }
+  .section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .section .caja__uno {
+    width: 25%;
+    margin-right: 20px;
+    margin-bottom: 150px;
+  }
+  .section .caja__dos {
+    width: 40%;
+    height: 150px;
+    margin-bottom: 150px;
+  }
+  .section .caja__dos .text {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    margin-left: 25px;
+  }
+  .section .caja__dos .barra {
+    height: 20px;
+  }
+  .section .caja__dos .barra .barra__progreso {
+    height: 20px;
+  }
+  .section .caja__dos .barra .barra__progreso .marcador {
+    height: 20px;
+    width: 20px;
+  }
+}
+/*# sourceMappingURL=estilos.css.map */

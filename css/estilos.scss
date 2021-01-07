@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+
+$gradient1: hsl(6, 100%, 80%);
+$gradiente2: hsl(335, 100%, 65%);
+
+$Pale-Blue: hsl(243, 100%, 93%);
+$Grayish-Blue: hsl(229, 7%, 55%);
+$Dark-Blue: hsl(228, 56%, 26%);
+$Very-Dark-Blue: hsl(229, 57%, 11%);
+
+// Estilos generales
+*{
+    margin: 0;
+    padding: 0;
+    // box-sizing: border-box;
+}
+
+// Moviles
+
+body{
+    background: url('../images/bg-mobile.png');
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    background-repeat: round;
+}
+
+.section{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+    .caja__uno{
+        background-color: $Dark-Blue;
+        border-radius: 10px 100px 10px 10px;
+        width: 90%;
+        height: 200px;
+        
+        .logo{
+            margin: 20px;
+        }
+
+        .iconos{
+            display: flex;
+            justify-content: space-around;
+            padding-top: 20px;
+            width: 70%;
+            .icon{
+                width: 50px;
+                background-color: $Very-Dark-Blue;
+                text-align: center;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                border-radius:10px;
+                img{
+                    height: 25px;
+                    width: 30px;
+                    padding: 5px;
+                    
+                }
+            }
+        }
+    }
+
+    .caja__dos{
+        background-color: $Dark-Blue;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        height: 200px;
+        border-radius: 10px;
+        margin-top: 20px;
+
+        .text{
+            color: #ffffff;
+            span{
+                color: #ffffff;
+                font-weight: bolder;
+                
+            }
+        }
+        .barra{
+            margin-top: 20px;
+            background-color: $Very-Dark-Blue;
+            width: 90%;
+            border-radius: 20px;
+            .barra__progreso{
+                border-radius: 20px;
+                width: 80%;
+                background-image: linear-gradient(to right, $gradient1,$gradiente2);
+                display: flex;
+                justify-content: flex-end;
+                .marcador{
+                    height: 10px;
+                    background-color: #ffffff;
+                    width: 4%;
+                    border-radius: 10px;
+                }
+            }
+        }
+        .text__final{
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            width: 90%;
+            p{
+                color: #ffffff;
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+//  750px to 1440px
+@media only screen and (min-width:750px){
+    body{
+        background-image: url("../images/bg-desktop.png");
+        background-position-y: bottom;
+        background-color: $Very-Dark-Blue;
+        background-repeat: repeat-x;
+    }
+    .section{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        
+        .caja__uno{
+            width: 25%;
+            margin-right: 20px;
+            margin-bottom: 150px;
+        }
+        .caja__dos{
+            width: 40%;
+            height: 150px;
+            margin-bottom: 150px;
+            .text{
+                align-self: flex-start;
+                margin-left: 25px;
+            }
+            .barra{
+                height: 20px;
+                .barra__progreso{
+                    height: 20px;
+                    .marcador{
+                        height: 20px;
+                        width: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+// .attribution {
+//     font-size: 11px;
+//     text-align: center;
+
+//     a{
+//         color: hsl(228, 45%, 44%);
+//     }
+// }
+
